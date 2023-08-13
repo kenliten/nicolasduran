@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nicol&aacute;s Dur&aacute;n</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- Navbar (sit on top) -->
+    <div class="w3-black" id="home">
+        <div class="w3-bar w3-black">
+            <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
+            <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+            <a href="about.html" class="w3-bar-item w3-button">Sobre Mi</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Galería</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="moments.html" class="w3-bar-item w3-button">Momentos destacados</a>
+                    <a href="past-events.html" class="w3-bar-item w3-button">Eventos pasados</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Talleres y Cursos</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="available-courses.html" class="w3-bar-item w3-button">Cursos en línea disponibles</a>
+                    <a href="workshops.html" class="w3-bar-item w3-button">Talleres presenciales</a>
+                    <a href="calendar.html" class="w3-bar-item w3-button">Calendario de eventos y talleres</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Recursos</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="newcomers.html" class="w3-bar-item w3-button">Para nuevos maestros</a>
+                    <a href="books.html" class="w3-bar-item w3-button">Libros recomendados</a>
+                    <a href="links.html" class="w3-bar-item w3-button">Enlaces externos</a>
+                    <a href="multimedia.html" class="w3-bar-item w3-button">Audiovisuales</a>
+                </div>
+            </div>
+            <a href="contact.html" class="w3-bar-item w3-button">Contacto</a>
+        </div>
+    </div>
+    
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle hero-content">
+            <span style="margin-left: auto; margin-right: auto;" class="w3-center w3-block w3-padding-large w3-black w3-xlarge w3-animate-opacity">
+                <img src="android-chrome-192x192.png" alt="" style="width: 64px; height: 64px; margin: 12px auto;" class="w3-block">
+                <span class="w3-wide">NICOLAS DURAN</span>
+                <hr>
+                <p style="flex-wrap: wrap;">
+                    Conocimientos que inspiran y enriquecen<span class="w3-hide-small">, basados en la experiencia</span>.
+                </p>
+            </span>
+        </div>
+    </div>
+    
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2>Preguntas Frecuentes para Profesores</h2>
+        <div class="w3-accordion">
+            <button onclick="toggle('pregunta1')" class="w3-button w3-block w3-black w3-left-align">¿Cómo puedo acceder a los recursos en línea?</button>
+            <div id="pregunta1" class="w3-accordion-content w3-animate-opacity">
+                <p>Puedes acceder a los recursos en línea simplemente iniciando sesión en tu cuenta en nuestro sitio web. Una vez que hayas iniciado sesión, navega a la sección de Recursos y encontrarás una variedad de materiales descargables, herramientas y consejos para maestros nuevos.</p>
+            </div>
+
+            <button onclick="toggle('pregunta2')" class="w3-button w3-block w3-black w3-left-align">¿Cómo me inscribo en los talleres presenciales?</button>
+            <div id="pregunta2" class="w3-accordion-content w3-animate-opacity">
+                <p>Para inscribirte en nuestros talleres presenciales, visita la sección de Talleres en nuestro sitio web. Allí encontrarás detalles sobre los próximos talleres, fechas, ubicaciones y cómo registrarte. ¡Esperamos verte pronto en uno de nuestros eventos en persona!</p>
+            </div>
+            
+            <button onclick="toggle('pregunta3')" class="w3-button w3-block w3-black w3-left-align">¿Cómo puedo mejorar la participación de los estudiantes en clase?</button>
+            <div id="pregunta3" class="w3-accordion-content w3-animate-opacity">
+                <p>Fomentar la participación activa requiere crear un ambiente inclusivo, hacer preguntas abiertas, utilizar actividades interactivas y mostrar interés genuino en las opiniones de los estudiantes.</p>
+            </div>
+
+            <button onclick="toggle('pregunta4')" class="w3-button w3-block w3-black w3-left-align">¿Qué estrategias recomiendas para manejar el comportamiento disruptivo en el aula?</button>
+            <div id="pregunta4" class="w3-accordion-content w3-animate-opacity">
+                <p>Establecer reglas claras, mantener expectativas consistentes, utilizar refuerzos positivos, implementar estrategias de manejo emocional y hablar individualmente con los estudiantes pueden ayudar a manejar el comportamiento disruptivo.</p>
+            </div>
+            
+            <button onclick="toggle('pregunta5')" class="w3-button w3-block w3-black w3-left-align">¿Cómo puedo adaptar mi enseñanza para atender a diferentes estilos de aprendizaje?</button>
+            <div id="pregunta5" class="w3-accordion-content w3-animate-opacity">
+                <p>Varía tus métodos de enseñanza (visual, auditivo, kinestésico), utiliza materiales y recursos diversos, promueve la colaboración entre estudiantes y ofrece opciones de evaluación.</p>
+            </div>
+
+            <button onclick="toggle('pregunta6')" class="w3-button w3-block w3-black w3-left-align">¿Cuál es la importancia de la evaluación formativa en el proceso de enseñanza?</button>
+            <div id="pregunta6" class="w3-accordion-content w3-animate-opacity">
+                <p>La evaluación formativa proporciona retroalimentación continua, identifica áreas de mejora, guía la planificación de lecciones y ayuda a los estudiantes a comprender y alcanzar los objetivos de aprendizaje.</p>
+            </div>
+            
+            <button onclick="toggle('pregunta7')" class="w3-button w3-block w3-black w3-left-align">¿Cómo puedo integrar la tecnología de manera efectiva en mis clases?</button>
+            <div id="pregunta7" class="w3-accordion-content w3-animate-opacity">
+                <p>Selecciona herramientas tecnológicas que complementen tus objetivos de enseñanza, ofrece capacitación a los estudiantes, crea actividades interactivas y promueve el pensamiento crítico al utilizar la tecnología.</p>
+            </div>
+
+            <button onclick="toggle('pregunta8')" class="w3-button w3-block w3-black w3-left-align">¿Cuál es la importancia de establecer relaciones positivas con los padres de los estudiantes?</button>
+            <div id="pregunta8" class="w3-accordion-content w3-animate-opacity">
+                <p>Las relaciones con los padres fomentan la colaboración, permiten compartir información sobre el progreso del estudiante y crean un ambiente de apoyo que beneficia el aprendizaje.</p>
+            </div>
+            
+            <button onclick="toggle('pregunta9')" class="w3-button w3-block w3-black w3-left-align">¿Cómo puedo abordar la diversidad cultural en el aula?</button>
+            <div id="pregunta9" class="w3-accordion-content w3-animate-opacity">
+                <p>Infórmate sobre las culturas representadas en tu aula, muestra respeto por las diferencias, incluye contenido diverso en tu enseñanza y promueve la empatía y la comprensión entre los estudiantes.</p>
+            </div>
+
+            <button onclick="toggle('pregunta10')" class="w3-button w3-block w3-black w3-left-align">¿Qué estrategias puedo utilizar para motivar a mis estudiantes a aprender?</button>
+            <div id="pregunta10" class="w3-accordion-content w3-animate-opacity">
+                <p>Crea relevancia y conexión con la vida real, establece metas alcanzables, utiliza actividades interesantes y desafiantes, y reconoce los logros de los estudiantes de manera positiva.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="w3-bar w3-black w3-padding-16 w3-opacity w3-hover-opacity-off w3-center">
+        <a href="faqs.html" class="w3-bar-item w3-button w3-margin-left">Preguntas Frecuentes</a>
+    </div>
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="faqs.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+    
+    <script src="lib/script.js"></script>
+</body>
+</html>
+        
